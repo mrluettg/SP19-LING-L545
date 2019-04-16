@@ -1,0 +1,30 @@
+TDT EVALUATION
+python3 conll17_ud_eval.py --verbose fi_tdt-ud-test.conllu fi_tdt-ud-test_output.conllu
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     94.64 |     94.64 |     94.64 |     94.64
+XPOS       |     95.81 |     95.81 |     95.81 |     95.81
+Feats      |     90.77 |     90.77 |     90.77 |     90.77
+AllTags    |     89.75 |     89.75 |     89.75 |     89.75
+Lemmas     |     84.52 |     84.52 |     84.52 |     84.52
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+
+PERCEPTRON EVALUATION
+python3 conll17_ud_eval.py --verbose fi_tdt-ud-test.conllu fi_perceptron_output.conllu
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     90.33 |     90.33 |     90.33 |     90.33
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+Feats      |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |     90.33 |     90.33 |     90.33 |     90.33
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+

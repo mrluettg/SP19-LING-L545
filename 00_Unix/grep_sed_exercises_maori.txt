@@ -1,0 +1,26 @@
+1a. How many upper case words in Maori wiki?
+I am choosing to interpret this as words consisting of only upper case letters. 
+Command used: $ sed 's/[^a-zA-Z]\+/\n/g' < wiki.txt | grep -c '^[A-Z]\+$'
+Answer: 3869
+
+1b. how many lower case words in Maori wiki? 
+Command used: $ sed 's/[^a-zA-Z]\+/\n/g' < wiki.txt | grep -c '^[a-z]\+$'
+Answer 252027
+
+2. how many 4 letter words? 
+Command used: $ sed 's/[^a-zA-Z]\+/\n/g' < wiki.txt | grep -c '^[A-Za-z][A-Za-z][A-Za-z][A-Za-z]$'
+Answer: 34205
+
+3. Are there any only vowel words?
+Command used: $ sed 's/[^a-zA-Z]\+/\n/g' < wiki.txt | sort| uniq | grep -c '^[aeiouAEIOUaeiouAEIOUĀĒĪŌŪ]\+$'
+Answer: 48
+
+4. $ sed 's/[^a-zA-Z]\+/\n/g' < wiki.txt | sort | uniq -c |grep -c ' [^aeiouāēīōū]*[aeiouāēīōū][^aeiouāēīōū]*$'
+Anwer: 1012
+5.  Command used: $ sed 's/[^a-zA-Z]\+/\n/g' < wiki.txt | sort | uniq -c |grep -c ' [^aeiouāēīōū]*[aeiouāēīōū][^aeiouāēīōū]*[aeiouāēīōū][^aeiouāēīōū]*$'
+Answer: 2959
+
+
+1. Command used: $ sed 's/[^a-zA-Z]\+/\n/g' < wiki.txt| sort -r | uniq | sort -r | sed 's/[aeiouAEIOUĀĒĪŌŪāēīōū][a-zA-ZĀĒĪŌŪāēīōū]\+/\-/g'| sort -r | uniq -c
+2. Command used: $ sed 's/[^a-zA-Z]\+/\n/g' < wiki.txt| sort -r | uniq | sort -r | rev | sed 's/[aeiouAEIOUĀĒĪŌŪāēīōū][a-zA-ZĀĒĪŌŪāēīōū]\+/\-/g'| sort -r | uniq -c | rev
+

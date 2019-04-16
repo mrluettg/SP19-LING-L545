@@ -1,0 +1,94 @@
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |    100.00 |    100.00 |    100.00 |    100.00
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+Feats      |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |    100.00 |    100.00 |    100.00 |    100.00
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |     79.39 |     79.39 |     79.39 |     79.39
+LAS        |     75.04 |     75.04 |     75.04 |     75.04
+
+
+
+
+TREE 1: 
+TEST FILE: 
+ADJ erdaldunak <- VERB antzematen
+ADV oraindik <- AUX direlako
+OUT FILE: 
+ADJ erdaldunak <- ADV oraindik
+ADV oraindik <- VERB antzematen
+
+TREE 2: 
+No errors. 
+
+
+TREE 3: 
+TEST FILE: 
+VERB daudela <- VERB da
+NOUN instituzioak <- VERB daudela
+VERB bermatzeko <- VERB daudela
+OUT FILE: 
+VERB daudela <- PART ez
+NOUN instituzioak <- VERB betetzen
+VERB bermatzeko <- VERB da
+
+TREE 4: 
+TEST FILE: 
+PUNCT , <- NOUN bukaera
+ADV zoritxarrez <- AUX da
+OUT FILE: 
+PUNCT , <- ADV zoritxarrez 
+ADV zoritxarrez <- NOUN bukaera
+
+TREE 5: 
+TEST FILE: 
+NUM bigarrena <- PUNCT ,
+NUM 25.000koa <- NUM bigarrena 
+CCONJ eta <- PUNCT ,
+NUM hirugarrena <- CCONJ eta
+NUM 15.000koa <- NUM hirugarrena
+OUT FILE: 
+NUM bigarrena <- NUM 25.000koa
+CCONJ eta <- NUM 15.000koa
+NUM 25.000koa <- AUX izanen
+NUM hirugarrena <- NUM 15.000koa
+NUM 15.000koa <- NUM 25.000koa
+
+TREE 6: 
+No errors. 
+
+TREE 7: 
+No errors. 
+
+TREE 8: 
+TEST FILE: 
+NOUN astelehen <- VERB jarri
+OUT FILE: 
+NOUN astelehen <- PROPN Moluketan
+
+TREE 9: 
+TEST FILE: 
+VERB hautatu <- VERB eman
+VERB eman ROOT
+PUNCT . <- VERB eman
+OUT FILE: 
+VERB hautatu ROOT
+VERB eman <- VERB hautatu
+PUNCT . <- VERB hautatu
+
+TREE 10:
+TEST FILE: 
+CCONJ ere <- VERB izango
+OUT FILE: 
+CCONJ ere <- ADV gaur
+
+
+
+
+
+
+

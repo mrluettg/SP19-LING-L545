@@ -1,0 +1,13 @@
+!create transducer: hfst-lexc LANG.lexc -o LANG.lexc.hfst
+!see transducer as strings: hfst-fst2strings LANG.lexc.hfst
+!check bugs with: echo "пахча<n><gen>" | hfst-lookup chv.lexc.hfst
+!see if rules apply with: echo "п а х ч а >:0 {Ă}:0 н" | hfst-pair-test chv.twol.hfst
+!draw the chart with cat: chv.lexc | python3 lexc2dot.py | dot -Tpng -ochv.lexc.png
+!draw transducer $ hfst-fst2txt chv.lexc.hfst | python3 att2dot.py  | dot -Tpng -ochv.lexc.png
+!minimise transducer graph $ hfst-minimise LANG.gen.hfst  | hfst-fst2txt
+!
+
+
+!copyleft, Gnu general public license
+
+Naive coverage: ~0.14119243428592384777

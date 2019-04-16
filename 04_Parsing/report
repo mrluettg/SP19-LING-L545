@@ -1,0 +1,14 @@
+Results: 
+In general, the algorithm that chooses the dependencies will most likely choose 
+the same POS as in the testing data, though may choose other ones. This leads 
+to the algorithm overestimating or underestimating the length of the clause. 
+It is unlikely
+that the ROOT will be mistaken, as it only happened in one of the trees. Often, 
+it will get confused between the dependencies in clauses. 
+
+
+
+
+
+
+

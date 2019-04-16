@@ -1,0 +1,18 @@
+The segmenter I coded, called. "my_segmenter.py" worked by detecting "?", "!", and ".". At "?" and "!", it
+woule recognize these as symbols that, without a doubt, will  end a sentence. It prints the sentence and starts a 
+new one. When "." occurs, it checks if it's part of an acronym (Checks if the character two characters earlier is 
+rather a " " or another ".") or if it's part of a decimal number (the following character is a number). 
+
+The practical segmenter was much more intensive. I did not build it nor can read ruby that well, 
+but here's what it can do. It has the ability to detect punctuation within quotations and parentheses. My 
+segmenter is not capable of this. It also has something that accounts for abbreviation periods, but it seems 
+to function by replacing it with something else, where mine just ignores it. It has a handler for words with "!" in 
+them. Maori does not have a lot of african loan words, and does not use it natively. It 
+
+Because of the small dataset size, the only main difference happened when a page in the maori wikipedia
+did not end in a "." My program simply ignored this part of it and did not add it to the program, where the 
+pragmatic segmenter did. 
+
+Out of the 68 lines, my program only did 65 right. It had an error in its handler for sentences ending in a number. 
+This happened twice. It also lost a point on the one wikipedia article that didn't end in "."
+The practical segmenter got all of the points right. 

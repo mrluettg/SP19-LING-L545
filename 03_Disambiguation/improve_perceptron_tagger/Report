@@ -1,0 +1,11 @@
+
+#Erronous changes
+Here is a list of some of the changes I made that decreased the accuracy. 
+These were undone after their failure. 
+For each of these yielded UPOS < 96.66 (UPOS of dev with no changes)
+*changed "add('i suffix', word[-3:])" to "add('i suffix', word[-4:])", then "add('i suffix', word[-2:])"
+*added the lines "if i+3 > len(context): add('i+2 word', context[i+3])" and add('i+2 word', context[i-3])
+*The previous two additions were also attempted individually. 
+#Successfull change
+Added the line add('bias_2'). This increased the dev UPOS by .02 to 96.68. 
+I also tried this with the line "add('bias_3')", but this returned it to 96.66

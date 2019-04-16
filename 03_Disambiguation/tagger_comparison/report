@@ -1,0 +1,40 @@
+#Tagger Comparison
+##Goal
+To compare three taggers in the tagging Finnish parts of speech.
+The first tagger is a Universal Dependenccies tagger. 
+The second tagger is a Perceptron-based tagger. 
+The third tagger is a hunpos trigram based tagger. 
+##Method
+All taggers trained with the same training data and were tested on the same testing data. 
+Conllu files, 
+##Results
+The UD based POS tagger scored a 94.64 UPOS
+The Hunpos tagger scored a 94.15
+the Perceptron only scored a 90.33
+That is not to say that the Perceptron is bad, as 90.33 of correct POS tags is still rather impressive. 
+
+
+
+
+
+
+
+
+#MarkDown info
+
+#Major section heading
+
+##subsection heading. 
+
+'''
+multiline preformatted text
+'''
+
+*bulletted list item
+*item
+
+*italic*
+
+**bold**
+
+'preformatted text'
